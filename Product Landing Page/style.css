@@ -41,19 +41,16 @@ h2 {
     text-align: right;
     float: right;
     margin-top: 1%;
-    width:50%;
+    width: 50%;
 }
 
-#nav-bar > button {
+.nav-link {
     padding: 2% 5%;
     background-color: var(--background-color);
-}
-
-button {
-    border: 0;
-    font-family: var(--font-family);
     font-size: 1em;
     text-transform: capitalize;
+    color: inherit;
+    text-decoration: inherit;
 }
 
 main, #form-main, #info-main, #video-main, #pricing-main {
@@ -109,7 +106,7 @@ main > div {
     font-size: 1em;
 }
 
-#email-submit {
+#submit {
     font-weight: bold;
 }
 
@@ -178,12 +175,12 @@ main > div {
 #pricing-main > div > p {
     padding: 10px 60px;
     line-height: 2em;
-    height: 8em;
+    height: 10em;
     width: auto;
 }
 
 #pricing-main > div > input {
-    margin: 20px 50px;
+    margin: 20px 75qpx;
 }
 
 footer {
@@ -206,6 +203,93 @@ footer > div > p {
     font-size: 0.9em;
 }
 
-footer > div > button {
+footer > div > a.nav-link {
     background-color: var(--container-background-color);
+    padding: 1%;
+}
+
+/* 900px */
+@media (max-width: 900px) {
+    main {
+        width: 100%;
+    }
+
+    footer {
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        margin-bottom: 2%;
+    }
+}
+
+/* 800px */
+@media (max-width: 800px) {
+    #pricing-main {
+        flex-wrap: wrap;
+    }
+
+    #pricing-main > div {
+        margin: 10px 225px;
+    }
+
+    footer {
+        width: 90%;
+    }
+}
+
+/* 400px */
+@media (max-width: 400px) {
+    body, footer {
+        margin: 0px;
+    }
+
+   #header {
+        width: 100vw;
+        display: block;
+        position: fixed;
+        top: 0;
+        padding: 1%;
+        text-align: center;
+    }
+    
+    #header-img {
+        margin: auto;
+        float: none;
+    }
+    
+    #nav-bar {
+        display: block;
+        text-align: center;
+        margin-top: 1%;
+        width:100%;
+    }
+
+    main, #form-main, #info-main, #video-main, #pricing-main {
+        margin-top: -75px;
+        margin-bottom: 1%;
+        padding-top: 75px;
+    }
+
+    #video {
+        border: 0;
+        width: 280px;
+        height: 170px;
+        padding: 0px;
+    }
+
+    #pricing-main > div {
+        margin: 10px 25px;
+    }
+
+    .info-container {
+        grid-template-rows:  repeat(2, auto);
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "info-header"
+            "info-description";
+    }
+    
+    .info-icon {
+        display: none;
+    }
 }
