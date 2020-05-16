@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <title>FCC: Survey Form</title>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1 id="title">FCC Survey Form</h1>
+                <p id="description">Thank you for taking the time to improve the platform</p>
+            </header>
+            <form id="survey-form">
+                <fieldset class="block first-letter">
+                    <label for="name" id="name-label">name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </fieldset>
+                <fieldset class="block first-letter">
+                    <label for="email" id="email-label">email</label>
+                    <input type="email" id="email" placeholder="Enter your Email" required>
+                </fieldset>
+                <fieldset class="block first-letter">
+                    <label for="number"  id="number-label">age <span class="small-text">(optional)</span></label>
+                    <input type="number" id="number" placeholder="Age" min="10" max="120" step="1">
+                </fieldset>
+                <fieldset class="block first-letter">
+                    <label for="dropdown" id="dropdown-label">which option best describes your current role?</label>
+                    <select id="dropdown" name="dropdown">
+                        <option value="" disabled selected>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="ft_job">Full Time Job</option>
+                        <option value="ft_learner">Full Time Learner</option>
+                        <option value="secret">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <div class="block first-letter">
+                        <label for="recommend-radio" id="recommend-label">
+                        would you recommend FCC to a friend?</label>
+                    </div>
+                    <div class="inline capitalise">
+                        <input type="radio" name="recommend-radio" id="recommend-yes" value="yes" checked>
+                        <label for="recommend-yes" id="recommend-yes-label">definitely</label>
+                    </div>
+                    <div class="inline capitalise">
+                        <input type="radio" name="recommend-radio" id="recommend-maybe" value="maybe">
+                        <label for="recommend-maybe" id="recommend-maybe-label">maybe</label>
+                    </div>
+                    <div class="inline first-letter">
+                        <input type="radio" name="recommend-radio" id="recommend-no" value="no">
+                        <label for="recommend-no" id="recommend-no-label">not sure</label>
+                    </div>
+                </fieldset>
+                <fieldset class="block first-letter">
+                    <label for="fav-feature-dropdown" id="fav-feature-dropdown-label">
+                        what is your favourite feature of FCC?</label>
+                    <select id="fav-feature-dropdown">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="challenges">Challenges</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="open_source">Open Source</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <div class="block first-letter">
+                        <label>
+                            what would you like to see improved? <span>(check all that apply)</span>
+                        </label>
+                    </div>
+                    <div class="inline capitalise">
+                        <input type="checkbox" id="improve_front-end_projects" value="front-end_projects">
+                        <label for="improve_front-end_projects" id="improve_front-end_projects-label">front-end projects</label>
+                    </div>
+                    <div class="inline capitalise">
+                        <input type="checkbox" id="improve_back-end_projects" value="back-end_projects">
+                        <label for="improve_back-end_projects" id="improve_back-end_projects-label">back-end projects</label>
+                    </div>
+                    <div class="inline capitalise">
+                        <input type="checkbox" id="improve_data_visualisation" value="data_visualisation">
+                        <label for="improve_data_visualisation" id="improve_data_visualisation-label">data visualisation</label>
+                    </div>
+                    <div class="inline capitalise">
+                        <input type="checkbox" id="improve_challenges" value="challenges">
+                        <label for="improve_challenges" id="improve_challenges-label">challenges</label>
+                    </div>
+                    <div class="inline capitalise">
+                        <input type="checkbox" id="improve_open_source_community" value="open_source_community">
+                        <label for="improve_open_source_community" id="improve_open_source_community-label">open source community</label>
+                    </div>
+                    <div class="inline capitalise">
+                        <input type="checkbox" id="improve_gitter_help_rooms" value="gitter_help_rooms">
+                        <label for="improve_gitter_help_rooms" id="improve_gitter_help_rooms-label">gitter help rooms</label>
+                    </div>
+                    <div class="inline capitalise">
+                        <input type="checkbox" id="improve_videos" value="videos">
+                        <label for="improve_videos" id="improve_videos-label">videos</label>
+                    </div>
+                    <div class="inline capitalise">
+                        <input type="checkbox" id="improve_city_meetups" value="city_meetups">
+                        <label for="improve_city_meetups" id="improve_city_meetups-label">city meetups</label>
+                    </div>
+                    <div class="inline capitalise">
+                        <input type="checkbox" id="improve_wiki" value="wiki">
+                        <label for="improve_wiki" id="improve_wiki-label">wiki</label>
+                    </div>
+                    <div class="inline capitalise">
+                        <input type="checkbox" id="improve_forum" value="forum">
+                        <label for="improve_forum" id="improve_forum-label">forum</label>
+                    </div>
+                    <div class="inline capitalise">
+                        <input type="checkbox" id="improve_additional_courses" value="additional_courses">
+                        <label for="improve_additional_courses" id="improve_additional_courses-label">additional courses</label>
+                    </div>
+                </fieldset>
+                <fieldset class="block first-letter">
+                    <label for="comments" id="comments-label">any comments or suggestions?</label>
+                    <textarea id="comments" name="comments" placeholder="Enter your comment here..." rows="5"></textarea>
+                </fieldset>
+                <fieldset>
+                    <button type="submit" id="submit" name="submit">Submit</button>
+                </fieldset>
+            </form>
+        </main>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+    <footer class="small-text">
+        Photo by You X Ventures on Unsplash
+    </footer>
+</html>
