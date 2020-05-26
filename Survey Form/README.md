@@ -1,11 +1,7 @@
 # Free Code Camp Project
 ## Survey Form
 
-![Survey Form 1](images/FCC%20Survey%20Form%201.png)
-![Survey Form 2](images/FCC%20Survey%20Form%202.png)
-![Survey Form 3](images/FCC%20Survey%20Form%203.png)
-
-[CodePen.io](https://codepen.io/careychua/pen/OJywvQm)
+![Survey Form](images/FCC%20Survey%20Form.gif)
 
 
 ## Project Requirements
