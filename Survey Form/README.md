@@ -39,4 +39,4 @@
 
 15. Inside the form element, a ```textarea``` at the end is present for additional comments.
 
-16. Inside the form element, a button with ```id="submit"``` to submit all my inputs is present.
+16. Inside the form element, a button with ```id="submit"``` to submit all inputs is present.
