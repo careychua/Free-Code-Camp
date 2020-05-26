@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2em;
     margin: 0px;
 }
 
@@ -18,7 +18,7 @@ h1 {
     height: 10vh;
     width: 100%;
     margin: 0px;
-    background-color: rgb(0, 150, 0);
+    background-color: rgb(0, 110, 0);
     display: flex;
     justify-content: end;
     text-align: left;
@@ -41,12 +41,12 @@ h1 {
 }
 
 #welcome-section {
+    height: 90vh;
+    padding: 10vh 20% 0px 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
-    height: 90vh;
-    padding: 10vh 20% 0px 20%;
     background-color: rgb(0, 0, 0);
 }
 
@@ -82,4 +82,49 @@ h1 {
     background-color: rgb(0, 150, 0);
     padding: 10px;
     border-radius: 6px;
+}
+
+#projects {
+    height: 150vh;
+    padding: 10vh 5% 0px 5%;
+    background-color: rgb(58, 58, 58);
+    color: rgb(85, 230, 230);
+}
+
+#projects > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 93%;
+}
+
+#projects > div > div {
+    border: 1px solid black;
+    margin: 1%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+#projects > div > div > header {
+    font-size: 0.8em;
+    width: 16%;
+    text-align: left;
+}
+
+.project-tile {
+    border: 1px solid black;
+    width: 84%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+}
+
+.project-tile > div {
+    border: 1px solid black;
+    margin: 0px 2% 0px 2%;
+    background: url();
 }
