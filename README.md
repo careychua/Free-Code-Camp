@@ -5,6 +5,7 @@
 
 [CodePen.io](https://codepen.io/careychua/pen/PoPeLrB)
 
+---
 
 ## Project Requirements
 1. Tribute page should have an element with a corresponding ```id="main"```, which contains all other elements.
@@ -25,3 +26,4 @@
 
 9.  The ```img``` element should be centered within its parent element.
 
+---
