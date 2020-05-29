@@ -1,10 +1,11 @@
 # Free Code Camp Project
 ## Product Landing Page
 
-![Product Landing Page](Product%20Landing%20Page/images/FCC%20Product%20Landing%20Page.png)
+![Product Landing Page](README/FCC%20Product%20Landing%20Page.png)
 
 [CodePen.io](https://codepen.io/careychua/pen/KKdxrYR)
 
+---
 
 ## Project Requirements
 1. Should have a header element with a corresponding ```id="header"```.
@@ -36,4 +37,5 @@
 14. There should be at least one media query.
     
 15. CSS flexbox should be utilized at least once.
-    
+
+---
