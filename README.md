@@ -5,6 +5,7 @@
 
 [CodePen.io](https://codepen.io/careychua/pen/OJywvQm)
 
+---
 
 ## Project Requirements
 1. Title with ```id="title"``` in H1 sized text.
@@ -38,3 +39,5 @@
 15. Inside the form element, a ```textarea``` at the end is present for additional comments.
 
 16. Inside the form element, a button with ```id="submit"``` to submit all inputs is present.
+
+---
