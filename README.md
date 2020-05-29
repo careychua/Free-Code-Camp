@@ -7,7 +7,7 @@
 
 ---
 
-## Project Requirements
+## [Project Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page)
 1. Should have a header element with a corresponding ```id="header"```.
 
 2. Should have an image within the header element with a corresponding ```id="header-img"```. A company logo would make a good image here.
