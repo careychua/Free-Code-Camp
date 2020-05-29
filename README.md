@@ -5,8 +5,9 @@
 
 [CodePen.io](https://codepen.io/careychua/pen/LYpJwNV)
 
+---
 
-## Project Requirements
+## [Project Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page)
 1. There is the ```main``` element with a corresponding ```id="main-doc"```, which contains the page's main content (technical documentation).
 
 2. Within the ```#main-doc``` element, there are several section elements, each with a class of ```main-section```. There should be a minimum of 5.
@@ -36,3 +37,5 @@
 14. On regular sized devices (laptops, desktops), the element with ```id="navbar"``` should be shown on the left side of the screen and should always be visible to the user.
 
 15. There should be at least one media query.
+
+---
