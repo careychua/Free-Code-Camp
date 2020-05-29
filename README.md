@@ -7,7 +7,7 @@
 
 ---
 
-## Project Requirements
+## [Project Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page)
 1. Tribute page should have an element with a corresponding ```id="main"```, which contains all other elements.
    
 2. An element with a corresponding ```id="title"```, which contains a string (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug").
