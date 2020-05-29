@@ -1,7 +1,7 @@
 # Free Code Camp Project
 ## Technical Documentation Page
 
-![Technical Documentation Page](Technical%20Documentation%20Page/images/FCC%20Technical%20Documentation%20Page.gif)
+![Technical Documentation Page](README/FCC%20Technical%20Documentation%20Page.gif)
 
 [CodePen.io](https://codepen.io/careychua/pen/LYpJwNV)
 
