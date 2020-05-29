@@ -1,7 +1,7 @@
 # Free Code Camp Project
 ## Survey Form
 
-![Survey Form](Survey%20Form/images/FCC%20Survey%20Form.gif)
+![Survey Form](README/FCC%20Survey%20Form.gif)
 
 [CodePen.io](https://codepen.io/careychua/pen/OJywvQm)
 
