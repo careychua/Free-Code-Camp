@@ -7,4 +7,4 @@
 * [Technical Documentation Page](https://github.com/careychua/Free-Code-Camp/tree/tech_doc)
 
 ## Projects in Progress
-* Personal Portfolio Webpage
+* [Personal Portfolio Webpage](https://github.com/careychua/Free-Code-Camp/tree/portfolio)
