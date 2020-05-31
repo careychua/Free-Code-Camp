@@ -3,6 +3,8 @@
 
 ![Personal Portfolio](README/FCC%20Personal%20Portfolio.png)
 
+---
+
 ![Profile Links](README/FCC%20Profile%20Links.png)
 
 [Github](https://github.com/careychua/Free-Code-Camp/tree/web/portfolio)
