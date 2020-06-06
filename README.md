@@ -1,5 +1,5 @@
 # Free Code Camp Project
-## Product Landing Page
+## Web: Product Landing Page
 
 ![Product Landing Page](README/FCC%20Product%20Landing%20Page.png)
 
