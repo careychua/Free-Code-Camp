@@ -1,12 +1,9 @@
-# Projects from Free Code Camp
+# Free Code Camp Project
+## Palindrome Checker
 
 ---
 
-## Responsive Web Design
-* [Tribute Page](https://github.com/careychua/Free-Code-Camp/tree/web/tribute)
-* [Survey Form](https://github.com/careychua/Free-Code-Camp/tree/web/survey)
-* [Product Landing Page](https://github.com/careychua/Free-Code-Camp/tree/web/product)
-* [Technical Documentation Page](https://github.com/careychua/Free-Code-Camp/tree/web/tech_doc)
-* [Personal Portfolio Webpage](https://github.com/careychua/Free-Code-Camp/tree/web/portfolio)
+## [Project Requirements](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/palindrome-checker)
+
 
 ---
