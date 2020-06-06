@@ -1,17 +1,19 @@
 # Projects from Free Code Camp
+## JavaScript: Telephone Number Validator
 
 ---
 
-## Responsive Web Design
-* [Tribute Page](https://github.com/careychua/Free-Code-Camp/tree/web/tribute)
-* [Survey Form](https://github.com/careychua/Free-Code-Camp/tree/web/survey)
-* [Product Landing Page](https://github.com/careychua/Free-Code-Camp/tree/web/product)
-* [Technical Documentation Page](https://github.com/careychua/Free-Code-Camp/tree/web/tech_doc)
-* [Personal Portfolio Webpage](https://github.com/careychua/Free-Code-Camp/tree/web/portfolio)
+## [Project Requirements](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/telephone-number-validator)
+1. Return true if the passed string looks like a valid US phone number.
 
----
+2. The user may fill out the form field any way they choose as long as it has the format of a valid US number.
 
-## JavaScript Algorithms and Data Structures
-* [Palindrome Checker](https://github.com/careychua/Free-Code-Camp/tree/js/palindrome)
+3. Your job is to validate or reject the US phone number.
+
+4. The area code is required.
+
+5. If the country code is provided, you must confirm that the country code is 1.
+
+6. Return true if the string is a valid US phone number; otherwise return false.
 
 ---
