@@ -1,5 +1,5 @@
 # Free Code Camp Project
-## Technical Documentation Page
+## Web: Technical Documentation Page
 
 ![Technical Documentation Page](README/FCC%20Technical%20Documentation%20Page.gif)
 
