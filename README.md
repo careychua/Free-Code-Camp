@@ -10,3 +10,8 @@
 * [Personal Portfolio Webpage](https://github.com/careychua/Free-Code-Camp/tree/web/portfolio)
 
 ---
+
+## JavaScript Algorithms and Data Structures
+* [Palindrome Checker](https://github.com/careychua/Free-Code-Camp/tree/js/palindrome)
+
+---
