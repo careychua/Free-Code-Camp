@@ -1,5 +1,5 @@
 # Free Code Camp Project
-## Palindrome Checker
+## JavaScript: Palindrome Checker
 
 ---
 
