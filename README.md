@@ -1,5 +1,5 @@
 # Projects from Free Code Camp
-## JavaScript: Caesar Cipher
+## JavaScript: Caesars Cipher
 
 ---
 
