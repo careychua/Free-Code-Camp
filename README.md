@@ -13,5 +13,9 @@
 
 ## JavaScript Algorithms and Data Structures
 * [Palindrome Checker](https://github.com/careychua/Free-Code-Camp/tree/js/palindrome)
+* [Roman Numeral Converter](https://github.com/careychua/Free-Code-Camp/tree/js/roman)
+* [Caesars Cipher](https://github.com/careychua/Free-Code-Camp/tree/js/caesar)
+* [Telephone Number Validator](https://github.com/careychua/Free-Code-Camp/tree/js/telephone)
+* [Cash Register](https://github.com/careychua/Free-Code-Camp/tree/js/cash)
 
 ---
