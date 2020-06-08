@@ -1,17 +1,19 @@
 # Projects from Free Code Camp
+## JavaScript: Cash Register
 
 ---
 
-## Responsive Web Design
-* [Tribute Page](https://github.com/careychua/Free-Code-Camp/tree/web/tribute)
-* [Survey Form](https://github.com/careychua/Free-Code-Camp/tree/web/survey)
-* [Product Landing Page](https://github.com/careychua/Free-Code-Camp/tree/web/product)
-* [Technical Documentation Page](https://github.com/careychua/Free-Code-Camp/tree/web/tech_doc)
-* [Personal Portfolio Webpage](https://github.com/careychua/Free-Code-Camp/tree/web/portfolio)
+## [Project Requirements](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/cash-register)
+1. Design a cash register drawer function ```checkCashRegister()``` that accepts purchase price as the first argument (```price```), payment as the second argument (```cash```), and cash-in-drawer (```cid```) as the third argument.
 
----
+2. ```cid``` is a 2D array listing available currency.
 
-## JavaScript Algorithms and Data Structures
-* [Palindrome Checker](https://github.com/careychua/Free-Code-Camp/tree/js/palindrome)
+3. The ```checkCashRegister()``` function should always return an object with a ```status``` key and a ```change``` key.
+
+4. Return ```{status: "INSUFFICIENT_FUNDS", change: []}``` if cash-in-drawer is less than the change due, or if you cannot return the exact change.
+
+5. Return ```{status: "CLOSED", change: [...]}``` with cash-in-drawer as the value for the key change if it is equal to the change due.
+
+6. Otherwise, return ```{status: "OPEN", change: [...]}```, with the change due in coins and bills, sorted in highest to lowest order, as the value of the ```change``` key.
 
 ---
