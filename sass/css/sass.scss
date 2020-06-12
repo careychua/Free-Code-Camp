@@ -1,0 +1,56 @@
+/* Variable
+
+$text-color: red;
+*/
+
+/* Mixin
+@mixin border-radius($radius){          // Create
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+  }
+
+#awesome {
+    @include border-radius(15px);       // Use
+  }
+*/
+
+/* if...else statement
+
+@mixin border-stroke($val) {
+    @if $val == light {
+        border: 1px solid black;
+    }
+    @else if $val == medium {
+        border: 3px solid black;
+    }
+    @else if $val == heavy {
+        border: 6px solid black;
+    }
+    @else {
+        border: none;
+    }
+}
+
+#box {
+    @include border-stroke(some);
+  }
+*/
+
+@import 'loops';                            // import partial file _loops.scss
+
+/* @extend
+
+.info{
+    width: 200px;
+    border: 1px solid black;
+    margin: 0 auto;
+  }
+
+.info-important {
+    @extend .info;
+    background-color: magenta;
+}
+*/
+

@@ -1,0 +1,21 @@
+/* for loop */
+// @for $j from 1 through 6 {              // start through end
+//     .text-#{$j} {
+//         font-size: 15px * $j;
+//     }
+// }
+
+// @each $color in blue, black, red {       // iterate through list/dictionary
+//     .#{$color}-bg {
+//         background-color: $color;
+//     }
+// }
+
+/* while loop */
+// $x: 1;
+// @while $x <=5 {
+//     .text-#{$x} {
+//         font-size: 15px * $x;
+//     }
+//     $x: $x + 1;
+// }
