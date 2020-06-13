@@ -12,5 +12,6 @@ In terminal:
   
 * Run to dynamically update changes to live server by watching the `src` folder in `app`:
   * `npx babel --watch src --out-dir . --presets react-app/`
+  * babel --watch src --out-dir=public --presets=env,react
 
 ---
