@@ -1,0 +1,101 @@
+$red: random(200) - 1;
+$green: random(200) - 1;
+$blue: random(200) - 1;
+
+$color-shift: 50;
+$main-color: rgb($red, $green, $blue);
+$hover-color: rgb($red+$color-shift, $green+$color-shift, $blue+$color-shift);
+$secondary-color: white;
+$quote-padding: 10px;
+$quote-font-size: 2em;
+$others-font-size: 1.5em;
+
+body {
+    height: 100vh;
+    background-color: $main-color;
+
+    .container-fluid {
+        height: 100%;
+
+        .empty-row {
+            height: 25%;
+        }
+
+        .quote-row {
+            height: 50%;
+        }
+    }
+}
+
+#quote-container {
+        background-color: $secondary-color;
+        color: $main-color;
+        height: 100%;
+        padding: $quote-padding;
+        border-radius: 4px;
+}
+
+#quote-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #text {
+        height: 65%;
+        padding: $quote-padding + 10;
+        text-align: center;
+        font-size: $quote-font-size;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    #author {
+        height: 15%;
+        padding: 0px $quote-padding + 20;
+        font-size: $others-font-size;
+        justify-content: end;
+    }
+
+    #clickables {
+        height: 20%;
+
+        div {
+            height: 100%;
+            padding: $quote-padding;
+
+            a {
+                background-color: $main-color;
+                color: $secondary-color;
+                height: 100%;
+                padding: $quote-padding;
+                font-size: $others-font-size;
+            }
+
+            a:hover {
+                background-color: $hover-color;
+            }
+
+            #tweet-quote {
+                width: 18%;
+            }
+
+            #new-quote {
+                width: 50%;
+            }
+        }
+    }
+}
