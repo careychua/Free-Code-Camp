@@ -1,7 +1,7 @@
 body {
   height: 100vh;
   overflow: hidden;
-  background-color: #8ce6ff;
+  background-color: #32c3c8;
   color: black;
 }
 
@@ -25,6 +25,7 @@ footer {
   width: 50%;
   margin: 10px;
   border: 1px solid black;
+  box-shadow: 5px 5px 10px #4b4b4b, -5px -5px 10px #4b4b4b;
 }
 .app-container div {
   width: 100%;
@@ -37,6 +38,7 @@ footer {
   font-family: monospace;
   font-size: 1.2em;
   font-weight: 900;
+  background-color: #0fa0a5;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -52,6 +54,7 @@ footer {
 .container-contents {
   height: 95%;
   font-family: "Courier New", Courier, monospace;
+  background-color: #55e6eb;
 }
 
 #editor-contents {
@@ -67,6 +70,8 @@ footer {
   height: 100%;
   width: 100%;
   padding: 10px;
+  background-color: #55e6eb;
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */

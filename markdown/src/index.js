@@ -48,7 +48,7 @@ class Container extends React.Component {
         let type = this.props.type;
         let input = this.props.input;
         return ( 
-            <div id={ this.props.type.concat("-container") } className="app-container" >
+            <div id={ type.concat("-container") } className={"app-container"} >
                 <ContainerHeader type={ type }/> 
                 {
                 type == EDITOR && <ContainerContents type={ type } input={ input } handleChange={ this.props.handleChange } />
