@@ -212,7 +212,8 @@ class Previewer extends React.Component {
     updateContents() {
         let type = ('#').concat(this.props.type);
         let input = this.props.input;
-        document.querySelector(type).innerHTML = marked(input);
+        let markedInput = marked(input, {breaks: true, gfm: true});
+        document.querySelector(type).innerHTML = markedInput;
     }
 
     render() {
