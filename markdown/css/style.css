@@ -51,6 +51,10 @@ footer {
   align-items: center;
 }
 
+#icon a:hover {
+  color: #96ffff;
+}
+
 .container-contents {
   height: 95%;
   font-family: "Courier New", Courier, monospace;
@@ -72,6 +76,14 @@ footer {
   padding: 10px;
   background-color: #55e6eb;
   border: none;
+}
+
+.expand-container {
+  width: 100%;
+}
+
+.hide-container, .hide-container > * {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

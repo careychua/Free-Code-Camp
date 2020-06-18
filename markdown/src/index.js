@@ -7,10 +7,65 @@ class App extends React.Component {
         super(props);
 
         this.state = {
-            input: placeholder
+            input: placeholder,
+            expand: ''
         }
 
         this.handleChange = this.handleChange.bind(this);
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    shouldComponentUpdate() {
+        return true;
+    }
+
+    async handleClick() {
+        let type = (event.target.id).replace("-icon", "");
+        console.log("type:", type);
+
+        const promise = new Promise((resolve, reject) => {
+            resolve(
+                this.setState(state => {
+                    let expand = null;
+                    console.log("state.expand:", state.expand);
+                    state.expand == '' ? expand = type : expand = '';
+                    return ({
+                        expand: expand
+                    });
+                })
+            );
+        });
+
+        const result = await promise;
+        promise.then(() => {
+            console.log("state:", this.state);
+            switch(this.state.expand) {
+                case EDITOR:
+                    $(('#').concat(EDITOR).concat("-container")).addClass('expand-container');
+                    $(('#').concat(EDITOR).concat("-icon")).removeClass('fa-expand-arrows-alt');
+                    $(('#').concat(EDITOR).concat("-icon")).addClass('fa-compress-arrows-alt');
+                    $(('#').concat(PREVIEW).concat("-container")).addClass('hide-container');
+                    break;
+
+                case PREVIEW:
+                    $(('#').concat(PREVIEW).concat("-container")).addClass('expand-container');
+                    $(('#').concat(PREVIEW).concat("-icon")).removeClass('fa-expand-arrows-alt');
+                    $(('#').concat(PREVIEW).concat("-icon")).addClass('fa-compress-arrows-alt');
+                    $(('#').concat(EDITOR).concat("-container")).addClass('hide-container');
+                    break;
+
+                default:
+                    $(('#').concat(EDITOR).concat("-container")).removeClass('expand-container');
+                    $(('#').concat(PREVIEW).concat("-container")).removeClass('expand-container');
+                    $(('#').concat(EDITOR).concat("-icon")).addClass('fa-expand-arrows-alt');
+                    $(('#').concat(PREVIEW).concat("-icon")).addClass('fa-expand-arrows-alt');
+                    $(('#').concat(EDITOR).concat("-icon")).removeClass('fa-compress-arrows-alt');
+                    $(('#').concat(PREVIEW).concat("-icon")).removeClass('fa-compress-arrows-alt');
+                    $(('#').concat(EDITOR).concat("-container")).removeClass('hide-container');
+                    $(('#').concat(PREVIEW).concat("-container")).removeClass('hide-container');
+                    
+            }
+        });
     }
 
     handleChange(event) {
@@ -21,11 +76,12 @@ class App extends React.Component {
 
     render() {
         let input = this.state.input;
+        let expand = this.state.expand;
         return ( 
             <div>
                 <div id="main"className="container-fluid" >
-                <Container type={ EDITOR } input={ input } handleChange={ this.handleChange }/>
-                <Container type={ PREVIEW } input={ input }/>
+                <Container type={ EDITOR } input={ input } expand={ expand } handleChange={ this.handleChange } handleClick={ this.handleClick }/>
+                <Container type={ PREVIEW } input={ input } expand={ expand } handleClick={ this.handleClick }/>
                 </div>
                 <Footer/>
             </div>
@@ -44,17 +100,21 @@ class Container extends React.Component {
         super(props);
     }
 
+    shouldComponentUpdate() {
+        return true;
+    }
+
     render() {
         let type = this.props.type;
         let input = this.props.input;
         return ( 
             <div id={ type.concat("-container") } className={"app-container"} >
-                <ContainerHeader type={ type }/> 
+                <ContainerHeader type={ type } handleClick={ this.props.handleClick }/> 
                 {
-                type == EDITOR && <ContainerContents type={ type } input={ input } handleChange={ this.props.handleChange } />
+                type == EDITOR && <ContainerContents type={ type } input={ input } handleChange={ this.props.handleChange }/>
                 } 
                 {
-                type == PREVIEW && <ContainerContents type={ type } input={ input } />
+                type == PREVIEW && <ContainerContents type={ type } input={ input }/>
                 }
             </div>
         );
@@ -76,6 +136,7 @@ class ContainerHeader extends React.Component {
         return newText;
     }
 
+
     render() {
         let type = this.props.type;
         let text = this.returnHeader(type);
@@ -84,7 +145,9 @@ class ContainerHeader extends React.Component {
             <div id={ type.concat("-header") } className="container-header">
                 <div> { text } </div>
                 <div id="icon">
-                    <i className="fas fa-expand-arrows-alt"></i>
+                    <a onClick={ this.props.handleClick }>
+                        <i id={ type.concat("-icon") } className="fas fa-expand-arrows-alt"></i>
+                    </a>
                 </div>
             </div>
         );
