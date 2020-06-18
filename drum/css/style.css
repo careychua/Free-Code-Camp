@@ -1,0 +1,64 @@
+body {
+  height: 100vh;
+  background-color: #646464;
+  font-family: "Sigmar One", cursive;
+  font-size: 1.5em;
+}
+body main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#drum-machine {
+  width: 50%;
+  height: 40%;
+  padding: 20px;
+  background-color: #c8c8c8;
+  border: 8px solid orange;
+  display: flex;
+  flex-direction: row;
+}
+#drum-machine div {
+  width: 50%;
+  height: 100%;
+}
+
+#drum-pad {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 10px;
+  column-gap: 10px;
+}
+#drum-pad button {
+  width: 100%;
+  padding: 10px;
+  background-color: #646464;
+  border-radius: 4px;
+  box-shadow: 3px 3px 5px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#drum-pad .highlight-key {
+  background-color: orange;
+}
+
+#drum-controls {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(4, 1fr);
+}
+#drum-controls div {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */
