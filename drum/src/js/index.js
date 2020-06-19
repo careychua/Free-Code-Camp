@@ -1,7 +1,3 @@
-const POWER = 'power';
-const BANK = 'bank';
-const DISPLAY = 'display'
-
 // React
 class DrumMachine extends React.Component {
     constructor(props) {
@@ -10,17 +6,36 @@ class DrumMachine extends React.Component {
         this.state = {
             power: false,
             bank: 1,
-            display: ''
+            display: '',
+            volume: 0.5
         };
 
         this.handleClickAndKeyPress = this.handleClickAndKeyPress.bind(this);
         this.handleKey = this.handleKey.bind(this);
         this.handleClick = this.handleClick.bind(this);
         this.clearDisplay = this.clearDisplay.bind(this);
+        this.handleSlider = this.handleSlider.bind(this);
     }
 
     componentDidMount() {
         document.addEventListener('keydown', this.handleClickAndKeyPress);
+    }
+
+    handleSlider(event) {
+        let volumeNumber = event.target.value;
+        let volume = parseInt(volumeNumber) / 100;
+        let text = VOLUME;
+        let regex = /[a-z]/;
+        text = text.replace(regex, text.match(regex)[0].toUpperCase());
+        this.setState({
+            volume: volume
+        });
+        if(this.state.power) {
+            this.setState({
+                display: text.concat(": ").concat(volumeNumber)
+            });
+            this.clearDisplay(500);
+        }
     }
 
     handleClick(event) {
@@ -77,6 +92,7 @@ class DrumMachine extends React.Component {
 
     handleKey(keyObj) {
         let bank = this.state.bank;
+        let volume = this.state.volume;
         this.setState({
             display: keyObj.bank[bank].display
         });
@@ -88,7 +104,7 @@ class DrumMachine extends React.Component {
         setTimeout(() => {
             $(('#key-').concat(keyObj.key)).removeClass("highlight-key");
         }, 250);
-
+        document.querySelector(('#').concat(keyObj.key)).volume = volume;
         document.querySelector(('#').concat(keyObj.key)).play();
     }
 
@@ -108,7 +124,7 @@ class DrumMachine extends React.Component {
         return (
             <div id="drum-machine">
                 <DrumPad bank={ this.state.bank } handleClick={ this.handleClickAndKeyPress }/>
-                <DrumControls handleClick= { this.handleClick } display= { this.state.display }/>
+                <DrumControls handleClick= { this.handleClick } display= { this.state.display } volume={ this.state.volume } handleSlider={ this.handleSlider }/>
             </div>
         );
     }
@@ -147,10 +163,31 @@ class DrumControls extends React.Component {
             <div id="drum-controls">
                 <SwitchComponent type={ POWER } handleClick={ this.props.handleClick }/>
                 <Display display={ this.props.display } />
-                <div id="volume">
-                    volume
-                </div>
+                <Volume volume={ this.props.volume } handleSlider={ this.props.handleSlider }/>
                 <SwitchComponent type={ BANK }  handleClick={ this.props.handleClick }/>
+            </div>
+        );
+    }
+}
+
+class Volume extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        let volume = (this.props.volume * 100).toString();
+        let text = VOLUME;
+        let regex = /[a-z]/;
+        text = text.replace(regex, text.match(regex)[0].toUpperCase());
+        return (
+            <div id={ VOLUME }>
+                <div >
+                    { text }
+                </div>
+                <div>
+                    <input type="range" id={ VOLUME.concat("-slider") } min="0" max="100" value={ volume } onChange={ this.props.handleSlider }/>
+                </div>
             </div>
         );
     }
@@ -181,7 +218,7 @@ class SwitchComponent extends React.Component {
         let type = this.props.type;
         let text = type;
         let regex = /[a-z]/;
-        text = type.replace(regex, type.match(regex)[0].toUpperCase());
+        text = text.replace(regex, text.match(regex)[0].toUpperCase());
         return (
             <div id={ type }>
                 <div id={ type.concat("-text") } type={ type }>{ text }</div>

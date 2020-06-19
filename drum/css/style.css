@@ -1,21 +1,27 @@
 body {
-  height: 100vh;
+  height: 80vh;
   background-color: #646464;
-  font-family: "Sigmar One", cursive;
   font-size: 1.5em;
 }
 body main {
   height: 100%;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: center;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.7em;
+  padding: 10px;
 }
 
 #drum-machine {
   width: 60%;
-  height: 50%;
+  height: 70%;
   padding: 20px;
+  font-family: "Sigmar One", cursive;
   background-color: #c8c8c8;
   border: 8px solid orange;
   display: flex;
@@ -165,5 +171,7 @@ input:checked + .slider-bank {
 input:focus + .slider {
   box-shadow: 0 0 1px grey;
 }
+
+/* The switch - the box around the slider */
 
 /*# sourceMappingURL=style.css.map */

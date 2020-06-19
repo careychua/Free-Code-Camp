@@ -1,4 +1,9 @@
-let keys = [
+const POWER = 'power';
+const BANK = 'bank';
+const DISPLAY = 'display';
+const VOLUME = 'volume';
+
+const keys = [
     {
         key: 'Q',
         code: 81,
@@ -127,7 +132,7 @@ let keys = [
     },
 ];
 
-let switches =  [
+const switches =  [
     {
         power:  [
                     {
