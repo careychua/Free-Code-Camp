@@ -1,0 +1,99 @@
+@font-face{
+    font-family: "Digital Dream";
+    src: url("../fonts/DIGITALDREAM.ttf") format("truetype");
+}
+
+$main-bg-color: rgb(125, 195, 165);
+$cal-bg-color: black;
+$cal-text-color: white;
+$cal-border: 3px solid grey;
+$table-border: 1px solid black;
+$number-bg-color: grey;
+$operator-bg-color: rgb(85, 85, 85);
+$clear-bg-color: rgb(195, 20, 20);
+$delete-bg-color: rgb(255, 140, 0);
+$equals-bg-color: rgb(55, 55, 175);
+
+html, body {
+    height: 100vh;
+    background-color: $main-bg-color;
+}
+
+main {
+    height: 80%;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+footer {
+    height: 10%;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+#calculator {
+    height : 80%;
+    width: 30%;
+    color: $cal-text-color;
+    background-color: $cal-bg-color;
+    font-family: 'Oxanium', cursive;
+    border: $cal-border;
+    padding: 5px;
+
+    table {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        border-collapse:collapse;
+        border: $table-border;
+        
+        tr {
+            height: 8.3333333%;
+        }
+
+        td {
+            border: $table-border;
+            width: 25%;
+        }
+    }
+}
+
+.display-row {
+    text-align: right;
+    font-family: 'Digital Dream', 'Orbitron', sans-serif;
+
+    td {
+        padding: 5px;
+    }
+}
+
+#display-text {
+    font-size: 0.8em;
+    color: $delete-bg-color;
+}
+
+#display-input {
+    font-size: 1.2em;
+}
+
+.number {
+    background-color: $number-bg-color;
+}
+
+.operator {
+    background-color: $operator-bg-color;
+}
+
+.clear {
+    background-color: $clear-bg-color;
+}
+
+.delete {
+    background-color: $delete-bg-color;
+}
+
+.equals {
+    background-color: $equals-bg-color;
+}
