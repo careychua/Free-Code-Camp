@@ -6,7 +6,7 @@ class Clock extends React.Component {
     render() {
         return(
             <div id={ CLOCK }>
-                <Header id={ HEADER }/>
+                <Header id={ HEADER } headerText={ headerText }/>
                 <Values id={ VALUES }/>
                 <Timer id={ TIMER }/>
             </div>
@@ -38,10 +38,10 @@ class Timer extends React.Component {
                 </div>
                 <div id={ controlsId }>
                     <a className={ controlsClass }>
-                        <i class="fas fa-play"/><i class="fas fa-pause"/>
+                        <i className="fas fa-play"/><i className="fas fa-pause"/>
                     </a>
                     <a className={ controlsClass }>
-                        <i class="fas fa-redo-alt"/>
+                        <i className="fas fa-redo-alt"/>
                     </a>
                 </div>
             </div>
@@ -83,9 +83,9 @@ class Value extends React.Component {
             <div id={ id } className={ VALUE }>
                 <Header id={ labelId } headerText={ labelText }/>
                 <div id={ controlsId } className={ CONTROLS }>
-                    <a id={ decrementId } className={ARROW}><i class="fas fa-arrow-down"/></a>
+                    <a id={ decrementId } className={ARROW}><i className="fas fa-arrow-down"/></a>
                     <div id={ lengthId } className={ timerClass }>var</div>
-                    <a id={ incrementId } className={ARROW}><i class="fas fa-arrow-up"/></a>
+                    <a id={ incrementId } className={ARROW}><i className="fas fa-arrow-up"/></a>
                 </div>
             </div>
         );
@@ -99,7 +99,7 @@ class Header extends React.Component {
 
     render() {
         let id = this.props.id;
-        let headerText = this.props.headerText;
+        let headerText = capitalise(this.props.headerText);
 
         return (
             <div id= { id }>
