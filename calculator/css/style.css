@@ -40,29 +40,45 @@ footer {
 #calculator table tr {
   height: 8.3333333%;
 }
+#calculator table #display-row {
+  font-family: "Digital Dream", "Orbitron", sans-serif;
+}
+#calculator table #display-data {
+  width: 100%;
+}
+#calculator table #display-data div {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+#calculator table #display-data #display-text {
+  font-size: 0.8em;
+  line-height: 80%;
+  color: darkorange;
+}
+#calculator table #display-data #display {
+  font-size: 1.2em;
+  line-height: 80%;
+}
 #calculator table td {
   border: 1px solid black;
   width: 25%;
 }
-
-.display-row {
-  text-align: right;
-  font-family: "Digital Dream", "Orbitron", sans-serif;
+#calculator table td a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
-.display-row td {
-  padding: 5px;
-}
-
-#display-text {
-  font-size: 0.8em;
-  color: darkorange;
+#calculator table td a:hover {
+  color: black;
+  outline: 3px solid #aaaaaa;
 }
 
-#display-input {
-  font-size: 1.2em;
-}
-
-.number {
+.number, .decimal {
   background-color: grey;
 }
 
