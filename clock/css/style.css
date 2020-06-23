@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "Digital Dream";
+  src: url("../fonts/DIGITALDREAM.ttf") format("truetype");
+}
+html, body {
+  height: 100vh;
+  background-color: #009600;
+  font-size: 1.2em;
+}
+
+main {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+footer {
+  height: 10%;
+  font-size: 0.5em;
+  text-align: center;
+  color: #c8c8c8;
+}
+
+h1 {
+  margin: 0px;
+}
+
+#clock {
+  height: 80%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+#clock div {
+  /* .header .values */
+  width: 100%;
+}
+#clock #header {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#clock #header h1 {
+  font-size: 2em;
+}
+#clock #values {
+  height: 30%;
+  padding: 0px;
+  display: flex;
+}
+#clock #values .value {
+  /* #break, #session */
+  height: 100%;
+  width: 50%;
+  padding: 10px;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#clock #values .value div {
+  /* children of #break & #session: #header, #controls */
+  padding: 10px;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#clock #values .value .controls {
+  justify-content: center;
+  align-items: flex-start;
+}
+#clock #values .value .controls .arrow {
+  width: 10%;
+}
+#clock #values .value .controls .value-timer {
+  padding: 0px;
+  width: 35%;
+  line-height: 50%;
+}
+#clock #timer {
+  height: 60%;
+  padding: 10px;
+}
+#clock #timer div {
+  display: flex;
+  justify-content: center;
+}
+#clock #timer #time-left-container {
+  height: 80%;
+  text-align: center;
+  align-items: center;
+  border: 5px solid #005500;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+}
+#clock #timer #time-left-container div {
+  height: 50%;
+}
+#clock #timer #time-left-container #timer-label {
+  height: 40%;
+  width: 100%;
+  align-items: flex-end;
+}
+#clock #timer #time-left-container #time-left {
+  height: 60%;
+  width: 100%;
+  padding: 10px;
+  align-items: flex-start;
+  font-size: 2em;
+  font-family: "Digital Dream", "Orbitron", sans-serif;
+}
+#clock #timer #timer-controls {
+  height: 20%;
+  align-items: flex-start;
+}
+#clock #timer #timer-controls a {
+  padding: 10px 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
