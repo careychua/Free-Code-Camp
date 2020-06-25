@@ -1,7 +1,8 @@
 # Free Code Camp Project
 ## Front End Libraries: Pomodoro Clock
 
-![Pomodoro Clock gif]
+![Pomodoro Clock gif](README/clock.gif)
+*Clock is speeded up for demonstration purposes*
 
 ---
 
