@@ -1,7 +1,7 @@
 # Free Code Camp Project
 ## Front End Libraries: JavaScript Calculator
 
-![JavaScript Calculator gif](calculator/README/calculator.gif)
+![JavaScript Calculator gif](README/calculator.gif)
 
 ---
 
