@@ -19,3 +19,12 @@
 * [Cash Register](https://github.com/careychua/Free-Code-Camp/tree/js/cash)
 
 ---
+
+## Front End Libraries
+* [Random Quote Machine](https://github.com/careychua/Free-Code-Camp/tree/fel/quote)
+* [Markdown Previewer](https://github.com/careychua/Free-Code-Camp/tree/fel/markdown)
+* [Drum Machine](https://github.com/careychua/Free-Code-Camp/tree/fel/drum)
+* [JavaScript Calculator](https://github.com/careychua/Free-Code-Camp/tree/fel/calculator)
+* [Pomodoro Clock](https://github.com/careychua/Free-Code-Camp/tree/fel/clock)
+
+---
