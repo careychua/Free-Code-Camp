@@ -1,0 +1,64 @@
+html, body {
+  height: 100vh;
+  padding: 0px;
+  background-color: green;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+main * {
+  padding: 0px 50px;
+  display: flex;
+  justify-content: center;
+}
+main #title {
+  height: 5%;
+  align-items: flex-end;
+}
+main #title * {
+  padding: 0px;
+  margin: 0px;
+}
+main #chart {
+  height: 90%;
+  align-items: center;
+}
+main #chart g {
+  font-weight: 600;
+  font-size: 0.9em;
+}
+main #chart #chart-svg {
+  padding: 0px;
+}
+main #chart #chart-svg rect:hover {
+  fill: transparent;
+}
+main #footer {
+  height: 5%;
+  align-items: flex-start;
+  display: flex;
+  justify-content: flex-end;
+}
+main #footer * {
+  padding: 0px;
+}
+main #footer a:hover {
+  color: white;
+}
+
+#tooltip {
+  padding: 5px;
+  width: 125px;
+  height: 55px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  white-space: pre-line;
+}
+
+/*# sourceMappingURL=style.css.map */
