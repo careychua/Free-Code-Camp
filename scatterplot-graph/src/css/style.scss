@@ -1,0 +1,54 @@
+html, body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+
+    #title {
+        height: 15%;
+        text-align: center;
+    }   
+
+    #graph {
+        height: 85%;
+
+        #graph-svg {
+            height: 100%;
+            width: 100%;
+
+            .dot {                
+                opacity: 0.75;
+                stroke: black;
+                stroke-width: 1.5px;
+            }
+
+            .fail {
+                fill: red;
+            }
+
+            .pass {
+                fill: green;
+            }
+
+            .tick {
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+
+#tooltip {
+    padding: 5px;
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: navy;
+    color: white;
+    white-space: pre-line;
+    font-size: 0.75em;
+}

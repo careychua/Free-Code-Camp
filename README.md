@@ -1,30 +1,49 @@
-# Projects from Free Code Camp
+# Free Code Camp Project
+## Data Visualisation: Scatterplot Graph
+
+![Scatterplot graph gif](README/scatterplot-graph.gif)
 
 ---
 
-## Responsive Web Design
-* [Tribute Page](https://github.com/careychua/Free-Code-Camp/tree/web/tribute)
-* [Survey Form](https://github.com/careychua/Free-Code-Camp/tree/web/survey)
-* [Product Landing Page](https://github.com/careychua/Free-Code-Camp/tree/web/product)
-* [Technical Documentation Page](https://github.com/careychua/Free-Code-Camp/tree/web/tech_doc)
-* [Personal Portfolio Webpage](https://github.com/careychua/Free-Code-Camp/tree/web/portfolio)
+## [Project Requirements](https://www.freecodecamp.org/learn/data-visualization/data-visualization-projects/visualize-data-with-a-scatterplot-graph)
 
+1. There is a title element that has a corresponding `id="title"`.
+   
+2. There is an x-axis that has a corresponding `id="x-axis"`.
+   
+3. There is a y-axis that has a corresponding `id="y-axis"`.
+   
+4. There are dots, that each have a class of dot, which represent the data being plotted.
+   
+5. Each dot should have the properties `data-xvalue` and `data-yvalue` containing their corresponding x and y values.
+   
+6. The `data-xvalue` and `data-yvalue` of each dot should be within the range of the actual data and in the correct data format. For `data-xvalue`, integers (full years) or Date objects are acceptable for test evaluation. For `data-yvalue` (minutes), use Date objects.
+   
+7. The `data-xvalue` and its corresponding dot should align with the corresponding point/value on the x-axis.
+   
+8. The `data-yvalue` and its corresponding dot should align with the corresponding point/value on the y-axis.
+   
+9.  There are multiple tick labels on the y-axis with `%M:%S` time format.
+    
+10. There are multiple tick labels on the x-axis that show the year.
+    
+11. The range of the x-axis labels are within the range of the actual x-axis data.
+    
+12. The range of the y-axis labels are within the range of the actual y-axis data.
+    
+13. There is a legend containing descriptive text that has `id="legend"`.
+    
+14. When moused over an area and there is a tooltip with a corresponding `id="tooltip"` which displays more information about the area.
+    
+15. The tooltip should have a `data-year` property that corresponds to the `data-xvalue` of the active area.
+    
 ---
 
-## JavaScript Algorithms and Data Structures
-* [Palindrome Checker](https://github.com/careychua/Free-Code-Camp/tree/js/palindrome)
-* [Roman Numeral Converter](https://github.com/careychua/Free-Code-Camp/tree/js/roman)
-* [Caesars Cipher](https://github.com/careychua/Free-Code-Camp/tree/js/caesar)
-* [Telephone Number Validator](https://github.com/careychua/Free-Code-Camp/tree/js/telephone)
-* [Cash Register](https://github.com/careychua/Free-Code-Camp/tree/js/cash)
-
----
-
-## Front End Libraries
-* [Random Quote Machine](https://github.com/careychua/Free-Code-Camp/tree/fel/quote)
-* [Markdown Previewer](https://github.com/careychua/Free-Code-Camp/tree/fel/markdown)
-* [Drum Machine](https://github.com/careychua/Free-Code-Camp/tree/fel/drum)
-* [JavaScript Calculator](https://github.com/careychua/Free-Code-Camp/tree/fel/calculator)
-* [Pomodoro Clock](https://github.com/careychua/Free-Code-Camp/tree/fel/clock)
+### Additional notes
+In terminal:
+1. Navigate to `scatterplot-grph`
+2. ```sass``` should be installed
+3. Run to reflect changes made to scss:
+    `sass src/cssstyles.scss css/styles.css`
 
 ---
