@@ -1,0 +1,108 @@
+html, body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  background-color: #6ee16e;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+main #header {
+  height: 12%;
+  text-align: center;
+}
+main #header h1 {
+  font-size: 2em;
+}
+main #header h3 {
+  font-size: 1.5em;
+}
+main #legend {
+  height: 10%;
+  text-align: center;
+}
+main #legend #legend-svg {
+  height: 100%;
+  width: 35%;
+}
+main #legend #legend-svg g {
+  font-size: 0.9em;
+}
+main #legend #legend-svg .temp {
+  stroke: black;
+  stroke-width: 1px;
+}
+main #graph {
+  height: 78%;
+}
+main #graph #graph-svg {
+  height: 100%;
+  width: 100%;
+}
+main #graph #graph-svg .tick {
+  font-size: 1.5em;
+}
+main #graph #graph-svg .cell:hover {
+  stroke: black;
+  stroke-width: 1px;
+}
+
+.t-2p8 {
+  fill: #000064;
+}
+
+.t-3p9 {
+  fill: #2020aa;
+}
+
+.t-5p0 {
+  fill: #0087ff;
+}
+
+.t-6p1 {
+  fill: #66b7ff;
+}
+
+.t-7p2 {
+  fill: #c8e6ff;
+}
+
+.t-8p3 {
+  fill: #fff0dc;
+}
+
+.t-9p5 {
+  fill: #fac88c;
+}
+
+.t-10p6 {
+  fill: #ffaa41;
+}
+
+.t-11p7 {
+  fill: darkorange;
+}
+
+.t-12p8 {
+  fill: #c81e1e;
+}
+
+.t-max {
+  fill: #a00000;
+}
+
+#tooltip {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: navy;
+  color: white;
+  white-space: pre-line;
+  font-size: 0.75em;
+}
+
+/*# sourceMappingURL=style.css.map */
