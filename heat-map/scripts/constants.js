@@ -79,9 +79,9 @@ const tempData = [
 const graphId = 'graph';
 const rotateAngle = -90;
 const yAxisLabelText = 'Months';
-const G_paddingRight = 20;
+const G_paddingRight = 80;
 const G_paddingLeft = 120;
-const G_paddingBottom = 50;
+const G_paddingBottom = 60;
 const G_paddingTop = 10;
 const monthData = {
     1: "January",

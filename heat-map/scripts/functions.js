@@ -129,7 +129,7 @@ function createAxis(inputSvg, inputType, inputDataset) {
             let datasetY = dataset.map(data => data.month);
             datasetY = [...new Set(datasetY)];
 
-            let yLabelX = G_paddingLeft / 2 - G_paddingRight * 2;
+            let yLabelX = G_paddingLeft / 2 - G_paddingRight / 2;
             let yLabelY = svgDim.height / 2;
             let rotateYAxisLabel = `rotate(${ rotateAngle } ${ yLabelX } ${ yLabelY })`;
 

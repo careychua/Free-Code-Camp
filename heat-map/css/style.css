@@ -12,12 +12,16 @@ main {
 }
 main #header {
   height: 12%;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 main #header h1 {
   font-size: 2em;
 }
 main #header h3 {
+  margin: 0px;
   font-size: 1.5em;
 }
 main #legend {
