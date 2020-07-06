@@ -40,6 +40,6 @@ In terminal:
 1. Navigate to `bar-chart/css`
 2. ```sass``` should be installed
 3. Run to reflect changes made to scss:
-    `sass styles.scss styles.css`
+    `sass style.scss style.css`
 
 ---
