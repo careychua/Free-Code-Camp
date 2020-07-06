@@ -48,6 +48,6 @@ In terminal:
 1. Navigate to `heat-map`
 2. `sass` should be installed
 3. Run to reflect changes made to scss:
-    `sass src/css/styles.scss css/styles.css`
+    `sass src/css/style.scss css/style.css`
 
 ---
