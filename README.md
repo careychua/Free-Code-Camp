@@ -30,6 +30,6 @@ In terminal:
 1. Navigate to `calculator`
 2. ```sass``` should be installed
 3. Run to reflect changes to scss:
-    `sass src/css/styles.scss css/styles.css`
+    `sass src/css/style.scss css/style.css`
 
 ---
