@@ -1,5 +1,5 @@
 # Free Code Camp Project
-## Data Visualisation: Treemap
+## Data Visualisation: Treemap Diagram
 
 ![Treemap gif](README/treemap.gif)
 
