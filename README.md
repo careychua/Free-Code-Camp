@@ -1,30 +1,30 @@
-# Projects from Free Code Camp
+# Free Code Camp Project
+## Data Visualisation: Treemap
+
+![Treemap gif](README/treemap.gif)
 
 ---
 
-## Responsive Web Design
-* [Tribute Page](https://github.com/careychua/Free-Code-Camp/tree/web/tribute)
-* [Survey Form](https://github.com/careychua/Free-Code-Camp/tree/web/survey)
-* [Product Landing Page](https://github.com/careychua/Free-Code-Camp/tree/web/product)
-* [Technical Documentation Page](https://github.com/careychua/Free-Code-Camp/tree/web/tech_doc)
-* [Personal Portfolio Webpage](https://github.com/careychua/Free-Code-Camp/tree/web/portfolio)
+## [Project Requirements](https://www.freecodecamp.org/learn/data-visualization/data-visualization-projects/visualize-data-with-a-treemap-diagram)
+1. The tree map should have a title with a corresponding `id="title"`.
+2. The tree map should have a description with a corresponding `id="description"`.
+3. The tree map should have rect elements with a corresponding `class="tile"` that represent the data.
+4. There should be at least 2 different fill colors used for the tiles.
+5. Each tile should have the properties `data-name`, `data-category`, and `data-value` containing their corresponding name, category, and value.
+6. The area of each tile should correspond to the data-value amount: tiles with a larger data-value should have a bigger area.
+7. The tree map should have a legend with corresponding `id="legend"`.
+8. The legend should have rect elements with a corresponding `class="legend-item"`.
+9. The `rect` elements in the legend should use at least 2 different fill colors.
+10. When moused over an area, there is a tooltip with a corresponding `id="tooltip"` which displays more information about the area.
+11. The tooltip should have a `data-value` property that corresponds to the `data-value` of the active area.
 
 ---
 
-## JavaScript Algorithms and Data Structures
-* [Palindrome Checker](https://github.com/careychua/Free-Code-Camp/tree/js/palindrome)
-* [Roman Numeral Converter](https://github.com/careychua/Free-Code-Camp/tree/js/roman)
-* [Caesars Cipher](https://github.com/careychua/Free-Code-Camp/tree/js/caesar)
-* [Telephone Number Validator](https://github.com/careychua/Free-Code-Camp/tree/js/telephone)
-* [Cash Register](https://github.com/careychua/Free-Code-Camp/tree/js/cash)
-
----
-
-## Front End Libraries
-* [Random Quote Machine](https://github.com/careychua/Free-Code-Camp/tree/fel/quote)
-* [Markdown Previewer](https://github.com/careychua/Free-Code-Camp/tree/fel/markdown)
-* [Drum Machine](https://github.com/careychua/Free-Code-Camp/tree/fel/drum)
-* [JavaScript Calculator](https://github.com/careychua/Free-Code-Camp/tree/fel/calculator)
-* [Pomodoro Clock](https://github.com/careychua/Free-Code-Camp/tree/fel/clock)
+### Additional notes
+In terminal:
+1. Navigate to `treemap`
+2. ```sass``` should be installed
+3. Run to reflect changes to scss:
+    `sass src/css/style.scss css/style.css`
 
 ---

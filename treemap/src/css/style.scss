@@ -1,0 +1,95 @@
+html, body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+
+    * {
+        padding: 0px;
+    }
+
+    #navbar {
+        height: 4%;
+        padding: 2px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+
+            li {
+                padding: 0px 10px;
+            }
+        }
+    }
+
+    #main {
+        height: 96%;
+        text-align: center;
+        padding: 0px 50px 50px 50px;
+        
+        * {
+            padding: 2px 0px;
+            margin: 0px;
+        }
+        
+
+        #header {
+            height: 10%;        
+        }
+
+        #legend {
+            height: 8%;
+
+            #legend-svg {
+                width: 100%;
+                height: 100%;
+
+                #legend-items {
+                    height: 100%;
+                }
+
+                #legend-texts {
+                    font-size: 0.75em;
+                    line-height: 0.9;
+                    white-space: pre-line;
+                    fill: white;
+                }
+            }
+        }
+
+        #graph {
+            height: 82%;
+
+            #graph-svg {
+                width: 100%;
+                height: 100%;
+
+                .tile {
+                    stroke: black;
+                    overflow: hidden;
+                }
+
+                .tile-text {
+                    fill: white;
+                    font-size: 0.75em;
+                    white-space: pre-line;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}
+
+#tooltip {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 0.75em;
+    font-weight: 600;
+    white-space: pre-line;
+}
