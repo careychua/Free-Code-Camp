@@ -28,3 +28,12 @@
 * [Pomodoro Clock](https://github.com/careychua/Free-Code-Camp/tree/fel/clock)
 
 ---
+
+## Data Visualisation
+* [Bar Chart](https://github.com/careychua/Free-Code-Camp/tree/datavis/bar-chart)
+* [Scatterplot Graph](https://github.com/careychua/Free-Code-Camp/tree/datavis/scatterplot-graph)
+* [Heat Map](https://github.com/careychua/Free-Code-Camp/tree/datavis/heat-map)
+* [Choropleth Map](https://github.com/careychua/Free-Code-Camp/tree/datavis/choropleth-map)
+* [Treemap Diagram](https://github.com/careychua/Free-Code-Camp/tree/datavis/treemap)
+
+---
